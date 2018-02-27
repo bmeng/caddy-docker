@@ -4,8 +4,7 @@ RUN apk add --update openssh-client git tar
 
 ADD caddy /usr/bin/
 
-RUN chmod 0755 /usr/bin/caddy \
- && /usr/bin/caddy -version
+RUN chmod 0755 /usr/bin/caddy
 
 EXPOSE 8080 8443
 WORKDIR /srv
